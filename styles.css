@@ -1,1 +1,240 @@
+*{
+    box-sizing: border-box;
+}
 
+/* body */
+body{
+    background-color: rgb(10, 20, 70);
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(15, 115, 150);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(15, 114, 150, 0.8);
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: rgb(0, 228, 216);
+}
+
+/* header */
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 4px solid orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+}
+.header .dp-name-div{
+    padding: 5px;
+    margin-left:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .dp-div{
+    margin-right: 15px;
+}
+.header .name-div{
+    font-size: 15px;
+}
+
+/* header navigation list*/
+.nav-div{
+    margin-right: 5px;
+}
+.nav-div ul{
+    list-style-type: none;
+}
+.nav-div li{
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+    transition: background-color 0.3s, box-shadow 1.2s;
+}
+.nav-div li:hover{
+    background-color: rgb(20, 49, 214);
+    box-shadow: 100px 0 0 0 orange inset;
+    border-radius: 4px;
+}
+.nav-div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
+}
+
+/*main*/
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.about-container{
+    background-color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border: 1px solid white;
+}
+.about code{
+    color: black;
+    padding: 10px;
+}
+.div-gif img{
+    width: 250px;
+}
+
+/* skills */
+.expertise{
+    width: 95%;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.html, .css, .javascript{
+    width:30%;
+}
+.html code{
+    color: aqua;
+}
+.css code{
+    color: aqua;
+}
+.javascript code{
+    color: aqua;
+}
+
+/* projects */
+.projects{
+    color: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+iframe.my-projects{
+    border-radius: 10px;
+    width:70%;
+    height: 450px;
+}
+
+.certification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:95%;
+    margin:20px;
+}
+.cert{
+    width:75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cert img{
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* contact */
+.contact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.socials{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.socials img{
+    width: 40px;
+}
+.Gmail, .WhatsApp, .LinkedIn, .Twitter, .GitHub{
+    border-radius: 30px;
+    transition: box-shadow 0.8s;
+}
+.Gmail:hover{
+    box-shadow: 0px 0px 20px 15px rgba(231, 34, 34, 0.8);
+} 
+.WhatsApp:hover{
+    box-shadow: 0px 0px 20px 10px rgba(70, 255, 0, 0.8);
+}
+.LinkedIn:hover{
+    box-shadow: 0px 0px 20px 10px rgba(0, 255, 255, 0.8);
+}
+.Twitter:hover{
+    box-shadow: 0px 0px 20px 10px rgba(20, 180, 180, 0.9);
+}
+.GitHub:hover{
+    box-shadow: 0px 0px 20px 10px rgba(0, 255, 255, 0.8);
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width: 800px){
+    .dp-name-div{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .nav-div ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .expertise{
+        width: 100%;
+        flex-direction: column;
+    }
+    .html, .css, .javascript{
+        width: 80%;
+        margin: auto;
+    }
+    .socials{
+        width: 85%;
+    }
+}
