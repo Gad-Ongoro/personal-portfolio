@@ -135,6 +135,8 @@ iframe.my-projects{
     border-radius: 10px;
     width:70%;
     height: 450px;
+
+    background-color: white;
 }
 
 .certification{
