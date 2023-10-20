@@ -63,10 +63,9 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 50px;
-    transition: background-color 0.3s, box-shadow 1.2s;
+    transition: all 0.7s;
 }
 .nav-div li:hover{
-    background-color: rgb(20, 49, 214);
     box-shadow: 100px 0 0 0 orange inset;
     border-radius: 4px;
 }
