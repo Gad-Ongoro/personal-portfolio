@@ -36,8 +36,6 @@ div.cursor1{
     transform: translate(-50%, -50%);
 
     pointer-events: none;
-
-    transition: all 0.01s;
 }
 
 div.cursor2{
@@ -53,8 +51,6 @@ div.cursor2{
     transform: translate(-50%, -50%);
 
     pointer-events: none;
-
-    transition: all 0.01s;
 }
 
 /* header */
