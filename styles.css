@@ -170,27 +170,28 @@ iframe.my-projects{
     background-color: white;
 }
 
-.certification{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+/* certs */
+.cert-btns-container{
     width:95%;
-    margin:20px;
+    margin: auto;
 }
 .cert{
-    width:75%;
+    width: 98%;
     margin: auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .cert img{
-    width: 300px;
+    width: 250px;
     margin: 5px;
     border-radius: 5px;
+    transition: all 0.6s;
+}
+.cert img:hover{
+    transform: scale(1.5);
+    border: 1px solid orange;
 }
 
 /* contact */

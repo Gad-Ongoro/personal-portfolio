@@ -13,3 +13,8 @@ function windowCursor(){
     });
 };
 windowCursor();
+
+// carousel
+function certCarousel(){
+    
+};
