@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* body */
 body{
     background-color: rgb(10, 20, 70);
@@ -36,6 +40,7 @@ div.cursor1{
     transform: translate(-50%, -50%);
 
     pointer-events: none;
+    transition: all 0.05s;
 }
 
 div.cursor2{
@@ -51,6 +56,7 @@ div.cursor2{
     transform: translate(-50%, -50%);
 
     pointer-events: none;
+    transition: all 0.05s;
 }
 
 /* header */
