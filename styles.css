@@ -10,6 +10,7 @@ html{
 body{
     background-color: rgb(10, 20, 70);
     margin: 0;
+    /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar{
@@ -186,8 +187,10 @@ iframe.my-projects{
     width: 98%;
     margin: auto;
 
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
 }
 .cert img{
     width: 250px;
@@ -300,4 +303,4 @@ iframe.my-projects{
 }
 
 /* selector finder */
-/* contact socials */
+/* cert socials */
