@@ -180,18 +180,25 @@ iframe.my-projects{
 
 /* certs */
 .cert-carousel-container{
+    height: 200px;
     margin-top: 20px;
     position: relative;
 }
 .cert-div-container{
     overflow: hidden;
-    width:95%;
+    width:90%;
     margin: auto;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 .left-carousel-btn{
     width: 50px;
     position: absolute;
     top: 40%;
+    z-index: 10;
     /* transform: translateY(-50%); */
 
     transform: rotate(180deg);
@@ -203,17 +210,24 @@ iframe.my-projects{
     position: absolute;
     top: 40%;
     right: -0.8%;
+    z-index: 10;
 
     cursor: pointer;
 }
 .cert{
-    width: 98%;
+    width: 93%;
     margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
 
     /* display: grid;
     grid-template-columns: auto auto auto auto; */
+    transition: all 0.5s;
 }
 .cert img{
     width: 250px;
