@@ -10,7 +10,7 @@ html{
 body{
     background-color: rgb(10, 20, 70);
     margin: 0;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -179,9 +179,32 @@ iframe.my-projects{
 
 
 /* certs */
-.cert-btns-container{
+.cert-carousel-container{
+    margin-top: 20px;
+    position: relative;
+}
+.cert-div-container{
+    overflow: hidden;
     width:95%;
     margin: auto;
+}
+.left-carousel-btn{
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    /* transform: translateY(-50%); */
+
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.right-carousel-btn{
+    width: 50px;
+
+    position: absolute;
+    top: 40%;
+    right: -0.8%;
+
+    cursor: pointer;
 }
 .cert{
     width: 98%;
@@ -199,7 +222,7 @@ iframe.my-projects{
     transition: all 0.6s;
 }
 .cert img:hover{
-    transform: scale(1.2);
+    transform: scale(1.06);
     border: 1px solid orange;
 }
 
@@ -303,4 +326,4 @@ iframe.my-projects{
 }
 
 /* selector finder */
-/* cert socials */
+/* cert-btns-container socials */
