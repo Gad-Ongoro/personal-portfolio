@@ -144,21 +144,19 @@ div.cursor2{
 .expertise{
     width: 95%;
     color:white;
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
 }
-.html, .css, .javascript{
-    width:30%;
+.expertise div{
+    margin: 0 5px 0 5px;
 }
-.html code{
+.expertise h3 code{
     color: aqua;
 }
-.css code{
-    color: aqua;
-}
-.javascript code{
-    color: aqua;
+.expertise p{
+    line-height: 1.5rem;
 }
 
 /* projects */
@@ -341,3 +339,4 @@ iframe.my-projects{
 
 /* selector finder */
 /* cert-btns-container socials */
+/* expertise */
