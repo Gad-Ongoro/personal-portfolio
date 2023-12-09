@@ -133,6 +133,7 @@ div.cursor2{
     border: 1px solid white;
 }
 .about code{
+    display: block;
     color: black;
     padding: 10px;
 }
